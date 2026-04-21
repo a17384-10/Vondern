@@ -23,7 +23,7 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 15px;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
 }
 
 h1 {
@@ -31,7 +31,7 @@ h1 {
   text-decoration: none;
   font-size: 60px;
   color: rgb(255, 255, 255);
-  line-height: 2rem;
+  line-height: 4rem;
 }
 
 h2 {
@@ -39,7 +39,7 @@ h2 {
   text-decoration: none;
   font-size: 40px;
   color: black;
-  line-height: 2.2rem;
+  line-height: 3rem;
 }
 
 h3 {
@@ -63,7 +63,7 @@ h3 {
 
 /* VONDERN LOGO */
 .logo img {
-  height: 50px; 
+  height: 70px; 
 }
 
 /* NAVIGATION LINKS */
@@ -92,7 +92,7 @@ h3 {
 }
 
 /* RESPONSIVE BROWSER MENU WHEN SCREEN IS SMALLER */
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .nav-links {
     display: none;
     position: absolute;
@@ -1356,4 +1356,284 @@ input {
 
 .faq-item.active .toggle-icon {
     color: #394bac; /* Change color when open (optional) */
+}
+
+/* BUSINESS SECTION */
+.business-partner-section {
+    background-color: #cccccc; 
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.business-container {
+    display: flex;
+    max-width: 1100px;
+    width: 100%;
+    gap: 60px;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.business-info-column {
+    flex: 1;
+    color: #000;
+}
+
+.business-info-column h1 {
+    font-family: 'Inter-black', sans-serif;
+    font-size: 55px;
+    color: #000; 
+    margin-bottom: 30px;
+}
+
+.business-info-column h3 {
+    font-family: 'Inter-black', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.business-info-column p {
+    font-family: 'Inter-medium', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* Form Container */
+.business-form-column {
+    flex: 1;
+}
+
+.business-card-wrapper {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.business-form-title {
+    font-family: 'Inter-medium', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.business-input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.business-input-group label {
+    display: block;
+    font-family: 'Inter-black', sans-serif;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.business-input-group input, 
+.business-input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    font-size: 14px;
+    font-family: 'Inter-medium', sans-serif;
+}
+
+.business-input-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Form  */
+.business-form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.business-checkbox-label {
+    font-size: 13px;
+    font-family: 'Inter-black', sans-serif;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.business-checkbox-label input {
+    width: 20px; 
+    height: 20px;
+    margin-right: 10px;
+    margin-bottom: 0; 
+}
+
+.business-submit-btn {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-family: 'Inter-black', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.business-submit-btn:hover {
+    background-color: #444;
+}
+
+/* Mobile Fix */
+@media (max-width: 850px) {
+    .business-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .business-info-column {
+        text-align: center;
+    }
+}
+
+/* TOWNS SECTION */
+.creator-partner-section {
+    background-color: #cccccc; 
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creator-container {
+    display: flex;
+    max-width: 1100px;
+    width: 100%;
+    gap: 60px;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.creator-info-column {
+    flex: 1;
+    color: #000;
+}
+
+.creator-info-column h1 {
+    font-family: 'Inter-black', sans-serif;
+    font-size: 55px;
+    color: #000; 
+    margin-bottom: 30px;
+}
+
+.creator-info-column h3 {
+    font-family: 'Inter-black', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.creator-info-column p {
+    font-family: 'Inter-medium', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* Form Container */
+.creator-form-column {
+    flex: 1;
+}
+
+.creator-card-wrapper {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.creator-form-title {
+    font-family: 'Inter-medium', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.creator-input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.creator-input-group label {
+    display: block;
+    font-family: 'Inter-black', sans-serif;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.creator-input-group input, 
+.creator-input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    font-size: 14px;
+    font-family: 'Inter-medium', sans-serif;
+}
+
+.creator-input-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Form  */
+.creator-form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.creator-checkbox-label {
+    font-size: 13px;
+    font-family: 'Inter-black', sans-serif;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.creator-checkbox-label input {
+    width: 20px; 
+    height: 20px;
+    margin-right: 10px;
+    margin-bottom: 0; 
+}
+
+.creator-submit-btn {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-family: 'Inter-black', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.creator-submit-btn:hover {
+    background-color: #444;
+}
+
+/* Mobile Fix */
+@media (max-width: 850px) {
+    .creator-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .creator-info-column {
+        text-align: center;
+    }
 }

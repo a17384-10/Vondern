@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Vondern App Page</title>
+  <title>Vondern Homepage</title>
 
 <link rel="stylesheet" href="styles.css"></head>
 
 <body>
 
+<!-- TOP NAVIGATION BAR  -->
   <nav class="navbar">
 
-  <!-- Vondern Logo  -->
   <a href="index.html" class="logo">
     <img src="pics/vondernlogo.png" alt="Vondern Logo">
   </a>
@@ -37,61 +37,24 @@
     </a>
 
 </nav>
+
+<!-- HERO IMAGE CONTAINER  -->
 <section class="hero">
   <div class="hero-content">
-    <h1>Get the Vondern App</h1>
-    <p>Best for quickly finding a place to explore</p>
+    <h1>Blog</h1>
+    <p>Discover towns, local spots, and experiences worth getting out for.</p>
   </div>
+
 </section>
 
+  <!-- CONTENT CONTAINER-->
 <div class="full-container">
-  <h3>Coming Soon</h3>
+  <h2>Filters</h2>
+  <p>content</p>
+ 
 </div>
-  
-  <div class="carousel-wrapper">
-    <button class="nav-btn prev" onclick="scrollCarousel(-1)">&#10094;</button>
-    <button class="nav-btn next" onclick="scrollCarousel(1)">&#10095;</button>
 
-    <div class="carousel-track" id="carousel">
-      <div class="app-card"><img src="pics/experiences.png" alt="1"></div>
-      <div class="app-card"><img src="pics/experiences_map.png" alt="2"></div>
-      <div class="app-card"><img src="pics/interests.png" alt="3"></div>
-      <div class="app-card"><img src="pics/profile.png" alt="4"></div>
-      <div class="app-card"><img src="pics/profile_business.png" alt="5"></div>
-      <div class="app-card"><img src="pics/saved.png" alt="6"></div>
-    </div>
-  </div>
-
-  <div id="imageModal" class="modal" onclick="this.style.display='none'">
-    <img class="modal-content" id="imgFull">
-  </div>
-</section>
-
-<section class="cta-section">
-  <div class="container">
-    <div class="download-box">
-      <div class="app-icon-placeholder"></div>
-      <h2>Download for iOS!</h2>
-      <button class="btn-dark">LINK TO APPSTORE</button>
-    </div>
-
-    <div class="form-box">
-      <h2>Get notified when the app comes out!</h2>
-      <p>Input your information down below to be notified...</p>
-      <form>
-        <div class="form-row">
-          <input type="text" placeholder="First name...">
-          <input type="text" placeholder="Last name...">
-        </div>
-        <input type="email" placeholder="Email...">
-        <input type="tel" placeholder="Phone number...">
-        <button type="submit" class="btn-submit">SUBMIT</button>
-      </form>
-    </div>
-  </div>
-</section>
-
-<!--FOOTER-->
+</footer><!--FOOTER-->
 <footer class="main-footer">
   <div class="footer-container">
     
@@ -128,7 +91,6 @@
     <p>@2026 Vondern | Privacy Policy | Terms</p>
   </div>
 </footer>
-
 
 <script src="app.js"></script>
 </body>
