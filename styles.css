@@ -17,13 +17,13 @@
 body {
   font-family: 'Inter-medium', sans-serif;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   color: black;
   background-color: white;
   margin: 0;
   padding: 0;
   margin-bottom: 15px;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
 }
 
 h1 {
@@ -45,9 +45,9 @@ h2 {
 h3 {
   font-family: 'Inter-black', serif;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 24px;
   color: black;
-  line-height: 2.2rem;
+  line-height: 2rem;
 }
 
 
@@ -181,12 +181,18 @@ h3 {
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  width: 80%;
+  width: 50%;
 }
 
 /* IMAGE CONTAINER HEADING STYLE */
 .hero-content h1 {
   margin: 0 0 15px 0;
+}
+
+/* IMAGE CONTAINER HEADING STYLE */
+.hero-content h3 {
+  margin: 0 0 15px 0;
+  color: white;
 }
 
 /* IMAGE CONTAINER PARAPGRAPH STYLE */
@@ -229,11 +235,11 @@ h3 {
 
 /* CONTENT CONTAINER */
 .full-container {
+  padding-top: -100px;
   width: 100%;
-  padding: 40px 20px; 
   box-sizing: border-box; 
   text-align: center; 
-  padding-bottom: 0px;
+  padding-bottom: -100px;
 }
 
 /* 4 WAY IMAGE GRID */
@@ -241,9 +247,10 @@ h3 {
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
   gap: 7px;
-  padding: 100px; 
+  padding: 50px; 
   box-sizing: border-box;
   padding-top: 0;
+  padding-bottom: 100px;
 }
 
 .image-card {
@@ -292,20 +299,24 @@ h3 {
 
 .split-container {
   width: 100%;
-  height: 600px; 
+  max-width: 1000px;   /* controls how "small" it gets */
+  margin: 0 auto;      /* <-- THIS keeps it centered */
+  height: 500px; 
+
   background-image: url("pics/lighthouse.png");
   background-size: cover;
   background-position: center;
+  border-radius: 200px;
 
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center; 
   padding: 0 40px; 
   box-sizing: border-box;
 }
 
 .text-box {
-  width: 50%; 
+  width: 70%; 
   color: white;
   text-align: center;
 }
@@ -623,13 +634,25 @@ input {
 
 .two-column {
   display: flex;
-  align-items: center; 
+  align-items: flex-start; 
+  justify-content: left; /* Centers the two columns relative to the page */
   padding: 40px;
   gap: 40px; 
+  margin-top: 50px;
 }
 
 .left {
   flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: left;   
+  text-align: left;    
+}
+
+.left p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  max-width: 600px;       
 }
 
 .left h2 {
@@ -637,13 +660,7 @@ input {
 }
 
 .left h3 {
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-
-.left p {
-  margin-top: -5px;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 .right {
@@ -656,10 +673,65 @@ input {
   max-width: 100%;
   height: auto;
   padding: 15px; 
+  margin-top: 30px;
 }
 
 @media (max-width: 1000px) {
   .two-column {
+    flex-direction: column;
+  }
+}
+
+.two-columnn {
+  display: flex;
+  align-items: flex-start; 
+  justify-content: flex-start;
+
+  max-width: 1200px;                 /* caps content width */
+  margin: 50px auto 0 auto;          /* centers the whole section */
+
+  padding: 20px clamp(20px, 6vw, 100px); /* responsive side spacing */
+  gap: 10px; 
+}
+
+.leftt {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: left;   
+  text-align: left;    
+}
+
+.leftt p {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  max-width: 600px;       
+}
+
+.leftt h2 {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.leftt h3 {
+  margin: 0;
+}
+
+.rightt {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+}
+
+.rightt img {
+  max-width: 100%;
+  height: auto;
+  padding: 0px; 
+  margin-top: 50px;
+}
+
+@media (max-width: 1000px) {
+  .two-columnn {
     flex-direction: column;
   }
 }
@@ -1648,4 +1720,10 @@ li {
     .creator-info-column {
         text-align: center;
     }
+}
+
+.container {
+  max-width: 1100px;   /* controls how wide content can get */
+  margin: 0 auto;      /* centers it */
+  padding: 0 24px;     /* breathing room on smaller screens */
 }
