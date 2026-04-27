@@ -13,6 +13,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Inter-bold';
+  src: url('./fonts/inter-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* APPLYING CUSTOM FONTS */
 body {
   font-family: 'Inter-medium', sans-serif;
@@ -43,9 +50,9 @@ h2 {
 }
 
 h3 {
-  font-family: 'Inter-black', serif;
+  font-family: 'Inter-bold', serif;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 22px;
   color: black;
   line-height: 2rem;
 }
@@ -991,45 +998,15 @@ input {
 
 /* TOWNS SECTION */
 .town-partner-section {
-    background-color: #cccccc; 
+    background-image: url("pics/backgroundT.png");
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;  
+
     padding: 100px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.town-container {
-    display: flex;
-    max-width: 1100px;
-    width: 100%;
-    gap: 60px;
-    align-items: flex-start;
-    margin: 0 auto;
-}
-
-.town-info-column {
-    flex: 1;
-    color: #000;
-}
-
-.town-info-column h1 {
-    font-family: 'Inter-black', sans-serif;
-    font-size: 55px;
-    color: #000; 
-    margin-bottom: 30px;
-}
-
-.town-info-column h3 {
-    font-family: 'Inter-black', sans-serif;
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.town-info-column p {
-    font-family: 'Inter-medium', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 25px;
 }
 
 /* Form Container */
@@ -1072,6 +1049,7 @@ input {
     background-color: #f5f5f5;
     font-size: 14px;
     font-family: 'Inter-medium', sans-serif;
+    box-sizing: border-box;
 }
 
 .town-input-group textarea {
@@ -1131,7 +1109,7 @@ input {
 
 /* CONTACT US SECTION */
 .contact-us-section {
-    background-color: #4a4a4a; 
+    background-color: #83AE44; 
     padding: 100px 20px;
     display: flex;
     justify-content: center;
@@ -1139,54 +1117,10 @@ input {
     min-height: 100vh;
 }
 
-.contact-container {
-    display: flex;
-    max-width: 1100px;
-    width: 100%;
-    gap: 80px;
-    align-items: flex-start;
-    margin: 0 auto;
-}
-
-.contact-info-column {
-    flex: 1;
-    color: #fff;
-    text-align: left;
-}
-
-.contact-main-heading {
-    font-family: 'Inter-black', sans-serif;
-    font-size: 50px;
-    margin: 0 0 20px 0;
-    text-transform: uppercase;
-}
-
-.contact-sub-heading {
-    font-family: 'Inter-medium', sans-serif;
-    font-size: 18px;
-    line-height: 1.4;
-    margin-bottom: 25px;
-    font-weight: 600;
-}
-
-.contact-notes {
-    font-family: 'Inter-medium', sans-serif;
-    font-size: 13px;
-    line-height: 1.5;
-    margin-bottom: 80px;
-    opacity: 0.8;
-}
-
-.contact-stay-connected p {
-    font-family: 'Inter-medium', sans-serif;
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-weight: 600;
-}
-
 .contact-social-buttons {
     display: flex;
     gap: 15px;
+    margin-top: 15px;
 }
 
 .contact-social-btn {
@@ -1202,7 +1136,7 @@ input {
 }
 
 .contact-social-btn:hover {
-    background-color: #333;
+    background-color: #3c3c3c;
 }
 
 .contact-form-column {
@@ -1448,7 +1382,11 @@ li {
 
 /* BUSINESS SECTION */
 .business-partner-section {
-    background-color: #B2D977; 
+    background-image: url("pics/backgroundB.png");
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;  
+
     padding: 100px 20px;
     display: flex;
     justify-content: center;
@@ -1462,6 +1400,12 @@ li {
     gap: 60px;
     align-items: flex-start;
     margin: 0 auto;
+}
+
+.business-info-column {
+  background: rgba(255, 255, 255, 1);
+  padding: 40px;
+  border-radius: 20px;
 }
 
 .business-info-column {
@@ -1531,6 +1475,7 @@ li {
     background-color: #f5f5f5;
     font-size: 14px;
     font-family: 'Inter-medium', sans-serif;
+    box-sizing: border-box;
 }
 
 .business-input-group textarea {
@@ -1588,47 +1533,17 @@ li {
     }
 }
 
-/* TOWNS SECTION */
+/* CREATOR SECTION */
 .creator-partner-section {
-    background-color: #cccccc; 
+    background-image: url("pics/backgroundC.png");
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;  
+
     padding: 100px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.creator-container {
-    display: flex;
-    max-width: 1100px;
-    width: 100%;
-    gap: 60px;
-    align-items: flex-start;
-    margin: 0 auto;
-}
-
-.creator-info-column {
-    flex: 1;
-    color: #000;
-}
-
-.creator-info-column h1 {
-    font-family: 'Inter-black', sans-serif;
-    font-size: 55px;
-    color: #000; 
-    margin-bottom: 30px;
-}
-
-.creator-info-column h3 {
-    font-family: 'Inter-black', sans-serif;
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.creator-info-column p {
-    font-family: 'Inter-medium', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 25px;
 }
 
 /* Form Container */
@@ -1671,6 +1586,7 @@ li {
     background-color: #f5f5f5;
     font-size: 14px;
     font-family: 'Inter-medium', sans-serif;
+    box-sizing: border-box;
 }
 
 .creator-input-group textarea {
@@ -1734,27 +1650,12 @@ li {
   padding: 0 24px;     /* breathing room on smaller screens */
 }
 
-/* WHITE CONTAINER */
-.white-container {
-  padding-top: -100px;
-  width: 100%;
-  box-sizing: border-box; 
-  text-align: center; 
-  padding-bottom: -100px;
-}
-
-.white-container p {
-    line-height: 1.5;
-    margin-bottom: 10px;
-    margin-top: 0px;
-}
-
 .whynow {
   display: flex;
   align-items: flex-start; 
   justify-content: left; 
   padding: 40px;
-  gap: 40px; 
+  gap: 60px; 
   margin-top: -50px;
 }
 
